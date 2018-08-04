@@ -1,0 +1,13 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section__heading {
+  font-size: 4.8rem;
+  text-align: center;
+  &--blue {
+    color: #0e5f88;
+  }
+}

@@ -13,41 +13,45 @@
 </head>
 <body>
   <header>
-    <div class="title wrapper">
-      <h1 class="title__header">Corporate</h1>
-      <nav>
-        <ul class="title__nav">
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages">Home</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages">Demo</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages">Blog</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages">Pages</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages">About Us</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="wrapper">
+      <div class="upperNav">
+        <h1 class="title__header">Corporate</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Demo</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="lowerHeader">
+        <h2 class="bigWelcome">Welcome</h2>
+        <h3 class="smallWelcome">to my corporate website</h3>
+        <button class="button">
+          <a href="#">
+            <h4 class="button__text">Start</h4>
+          </a>
+        </button>
+      </div>
     </div>
-    <h2>Welcome</h2>
-    <h3>to my corporate website</h3>
-    <button class="button">
-      <a href="#">
-        <h4 class="button__text">Start</h4>
-      </a>
-    </button>
   </header>
 
   <section class="about wrapper">
-    <h3 class="section__heading">Welcome to <span class="blue">Corporate</span></h3>
+    <h3 class="section__heading">Welcome to <span class="section__heading--blue">Corporate</span></h3>
     <p class="section__textbox">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi.</p>
-    <button class="button--long">
+    <button class="button button--long">
       <a href="#">
         <h4 class="button__text">Know More</h4>
       </a>
@@ -179,44 +183,48 @@
   </section>
 
   <section class="question">
-    <h3 class="section__heading">Ask a Question</h3>
-    <form>
-      <input type="text" class="question__form">
-    </form>
-    <button class="button--black">
-      <a href="#">
-        <h4 class="button__text">More</h4>
-      </a>
-    </button>
+    <div class="wrapper">
+      <h3 class="section__heading">Ask a Question</h3>
+        <form>
+          <input type="text" class="question__form">
+        </form>
+        <button class="button button--black">
+          <a href="#">
+            <h4 class="button__text">Send</h4>
+          </a>
+        </button>
+    </div>  
   </section>
 
   <section class="team">
-    <h3 class="section__heading">Our Team</h3>
-    <div class="teamPhoto">
-      <img src="assets/image-12.jpeg" class="teamPhoto__pic" alt="#">
-      <div class="teamPhoto__text">
-        <h4 class="chooseBlock__head">David Regar</h4>
-        <p class="teamPhoto__jobd">Programmer</p>
+    <div class="wrapper">
+      <h3 class="section__heading">Our Team</h3>
+      <div class="teamPhoto">
+        <img src="assets/image-12.jpeg" class="teamPhoto__pic" alt="#">
+        <div class="teamPhoto__text">
+          <h4 class="chooseBlock__head">David Regar</h4>
+          <p class="teamPhoto__jobs">Programmer</p>
+        </div>
       </div>
-    </div>
-    <div class="teamPhoto">
-      <img src="assets/image-13.jpeg" class="teamPhoto__pic" alt="#">
-      <div class="teamPhoto__text">
-        <h4 class="chooseBlock__head">David Regar</h4>
-        <p class="teamPhoto__jobd">Programmer</p>
+      <div class="teamPhoto">
+        <img src="assets/image-13.jpeg" class="teamPhoto__pic" alt="#">
+        <div class="teamPhoto__text">
+          <h4 class="chooseBlock__head">David Regar</h4>
+          <p class="teamPhoto__jobs">Programmer</p>
+        </div>
       </div>
-    </div>
-    <div class="teamPhoto">
-      <img src="assets/image-14.jpeg" class="teamPhoto__pic" alt="#">
-      <div class="teamPhoto__text">
-        <h4 class="chooseBlock__head">David Regar</h4>
-        <p class="teamPhoto__jobd">Programmer</p>
+      <div class="teamPhoto">
+        <img src="assets/image-14.jpeg" class="teamPhoto__pic" alt="#">
+        <div class="teamPhoto__text">
+          <h4 class="chooseBlock__head">David Regar</h4>
+          <p class="teamPhoto__jobs">Programmer</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="">
-    <div class="footerUpper">
+  <footer>
+    <div class="footerUpper wrapper">
       <div class="footer__blocks">
         <h4 class="chooseBlock__head">Contact</h4>
         <p class="footer__regText"><a href="mailto:info@hackeryou.com">info@hackeryou.com</a></p>
@@ -245,29 +253,31 @@
       </div>
     </div>
 
-    <div class="footerEnd">
-      <h4 class="chooseBlock__head--whitebig">Corporate</h4>
-      <nav>
-        <ul class="title__nav__footer">
-          <li class="title__nav__link--small">
-            <a href="#" class="title__nav__pages--small">Home</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages--small">Demo</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages--small">Blog</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages--small">Pages</a>
-          </li>
-          <li class="title__nav__link">
-            <a href="#" class="title__nav__pages--small">About Us</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="footerEnd wrapper">
+      <div class="upperNav upperNav--center">
+        <h1 class="title__header title__header--small title__header--white title__header--center">Corporate</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item nav__item--small nav__item--center">
+              <a href="#" class="nav__link nav__link--white nav__link--small">Home</a>
+            </li>
+            <li class="nav__item nav__item--small nav__item--center">
+              <a href="#" class="nav__link nav__link--white nav__link--small">Demo</a>
+            </li>
+            <li class="nav__item nav__item--small nav__item--center">
+              <a href="#" class="nav__link nav__link--white nav__link--small">Blog</a>
+            </li>
+            <li class="nav__item nav__item--small nav__item--center">
+              <a href="#" class="nav__link nav__link--white nav__link--small">Pages</a>
+            </li>
+            <li class="nav__item nav__item--small nav__item--center">
+              <a href="#" class="nav__link nav__link--white nav__link--small">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="copyright">
+    <div class="copyright wrapper">
       <p class="footer__regText--center">
         2018 All rights reserved ©
       </p>
