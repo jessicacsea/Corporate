@@ -1,0 +1,30 @@
+.question {
+  background-color: #8ecceb;
+  padding: 5% 0;
+  &__form {
+    background: transparent;
+    border: none;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.quest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  border: black 1px solid;
+  font-size: 2rem;
+  padding: 1%;
+  border-radius: 5px;
+}

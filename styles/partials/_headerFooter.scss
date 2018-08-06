@@ -92,6 +92,12 @@ header {
     text-decoration: none;
     color: white;
   }
+  &__small {
+    width: 25%;
+  }
+  &--center {
+    margin: 5%;
+  }
 }
 
 footer {

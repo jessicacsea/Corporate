@@ -20,15 +20,19 @@
   &__head {
     font-size: 2.4rem;
     text-transform: none;
+    margin: 1% 2%;
     &--up {
       text-transform: uppercase;
     }
   }
   &__pic {
-  display: inline;
+  display: inline-block;
   }
   &__text {
-
+    font-size: 1.1rem;
+    display: inline;
+    margin: 0;
+    text-transform: none;
   }
 }
 
