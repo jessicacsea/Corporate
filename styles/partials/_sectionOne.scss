@@ -1,0 +1,93 @@
+// ===Why people choose us section===
+
+.chooseUs {
+  position: relative;
+  display: flex;
+}
+.chooseLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: #f1f3f3;
+  flex: 1 0 auto;
+}
+
+.chooseBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  &__head {
+    font-size: 2.4rem;
+    text-transform: none;
+    &--up {
+      text-transform: uppercase;
+    }
+  }
+  &__pic {
+  display: inline;
+  }
+  &__text {
+
+  }
+}
+
+.chooseRight {
+  width: 50%;
+  // flex: 0 1 auto;
+}
+
+// ===Services Section===
+
+.services {
+  padding-bottom: 2%;
+  &__head {
+    font-size: 1.9rem;
+  }
+  &__text {
+    font-size: 1.3rem;
+    text-transform: none;
+    list-style-image: url("../../assets/check-solid.png");
+  }
+  &__list {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 2%;
+    }
+}
+.services__head, .services__text {
+  margin: 0;
+  padding: 5% 0 0 0;
+}
+.servicesSection {
+  display: flex;
+}
+.servicesBox {
+  border: #8ecceb 1px solid;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 380px;
+  margin: 5% 2%;
+  align-items: center;
+  text-align: center;
+  padding: 5% 2%;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #8ecceb;
+    transform: scale(1.2);
+  }
+  i {
+    font-size: 4rem;
+    padding-bottom: 10%;
+  }
+  ul {
+    padding: 0;
+    i {
+      font-size: 1rem;
+      position: relative;
+      left: -5px;
+      padding-bottom: 0;
+    }
+  }
+}

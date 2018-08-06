@@ -1,0 +1,36 @@
+// ===Say about us section===
+.sayAbout {
+  background-color: #1d1d1d;
+  padding: 5% 0;
+  margin: 0;
+}
+
+.testPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5% 10%;
+  i {
+    font-size: 4rem;
+    color: white;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  .gallery__pic {
+    position: relative;
+    &--active {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: linear-gradient(rgba(29,29,29,0.78), rgba(29,29,29,0.78));
+    }
+  }
+}

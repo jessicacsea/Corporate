@@ -3,11 +3,30 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 5%;
 }
 .section__heading {
-  font-size: 4.8rem;
+  font-size: 3.3rem;
   text-align: center;
+  margin: 5% 0 2% 0;
   &--blue {
     color: #0e5f88;
+  }
+  &--white {
+    color: white;
+  }
+}
+
+.section__textbox {
+  font-size: 1.8rem;
+  color: #5d5e5d;
+  text-transform: none;
+  text-align: center;
+  margin: 3%;
+  &--white {
+    color: white;
+  }
+  &--italic {
+    font-style: italic;
   }
 }
