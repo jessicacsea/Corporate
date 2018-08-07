@@ -28,3 +28,43 @@ form {
   padding: 1%;
   border-radius: 5px;
 }
+
+// ==Our Team section===
+
+.team {
+  background-color: #f1f3f3;
+  padding: 5% 0;
+}
+.headshots {
+  display: flex;
+}
+.teamPhoto {
+  position: relative;
+  margin: 0 1%;
+  &:hover .teamPhoto__text {
+    display: block;
+  }
+  &__head {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline;
+    padding-left: 15px;
+  }
+  &__pic {
+  }
+  &__text {
+    @include coverOverlay;
+    text-align: center;
+    background-color: rgba(29,29,29,0.8);
+    display: none;
+    color: #eeeded;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include coverOverlay;
+  }
+}

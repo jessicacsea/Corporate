@@ -215,57 +215,81 @@
   <section class="team">
     <div class="wrapper">
       <h3 class="section__heading">Our Team</h3>
-      <div class="teamPhoto">
-        <img src="assets/image-12.jpeg" class="teamPhoto__pic" alt="#">
-        <div class="teamPhoto__text">
-          <h4 class="chooseBlock__head">David Regar</h4>
-          <p class="teamPhoto__jobs">Programmer</p>
+        <div class="headshots">
+          <div class="teamPhoto">
+            <img src="assets/image-12.jpeg" class="teamPhoto__pic" alt="#">
+            <div class="teamPhoto__text">
+              <div class="overlay">
+                <h4 class="teamPhoto__head">David Regar</h4>
+                <p class="teamPhoto__jobs">Programmer</p>
+              </div>
+            </div>
+          </div>
+          <div class="teamPhoto">
+            <img src="assets/image-13.jpeg" class="teamPhoto__pic" alt="#">
+            <div class="teamPhoto__text">
+              <div class="overlay">
+                <h4 class="teamPhoto__head">Seth Cohen</h4>
+                <p class="teamPhoto__jobs">Programmer</p>
+              </div>
+            </div>
+          </div>
+          <div class="teamPhoto">
+            <img src="assets/image-14.jpeg" class="teamPhoto__pic" alt="#">
+            <div class="teamPhoto__text">
+              <div class="overlay">
+                <h4 class="teamPhoto__head">Summer Roberts</h4>
+                <p class="teamPhoto__jobs">Head Programmer</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="teamPhoto">
-        <img src="assets/image-13.jpeg" class="teamPhoto__pic" alt="#">
-        <div class="teamPhoto__text">
-          <h4 class="chooseBlock__head">David Regar</h4>
-          <p class="teamPhoto__jobs">Programmer</p>
-        </div>
-      </div>
-      <div class="teamPhoto">
-        <img src="assets/image-14.jpeg" class="teamPhoto__pic" alt="#">
-        <div class="teamPhoto__text">
-          <h4 class="chooseBlock__head">David Regar</h4>
-          <p class="teamPhoto__jobs">Programmer</p>
-        </div>
-      </div>
     </div>
   </section>
 
   <footer>
     <div class="footerUpper wrapper">
       <div class="footer__blocks">
-        <h4 class="chooseBlock__head">Contact</h4>
-        <p class="footer__regText"><a href="mailto:info@hackeryou.com">info@hackeryou.com</a></p>
-        <p class="footer__regText"><a href="tel:1234567890">(123)456 - 7890</a></p>
-        <p class="footer__regText">Toronto, Ontario</p>
-        <form>
-          <input type="email" class="email" id="email">
+        <h4 class="footer__head">Contact</h4>
+        <p class="footer__regText footer__regText--email"><a href="mailto:info@hackeryou.com">info@hackeryou.com</a></p>
+        <p class="footer__regText footer__regText--phone"><a href="tel:1234567890">(123)456 - 7890</a></p>
+        <p class="footer__regText footer__regText--location">Toronto, Ontario</p>
+        <form class="footer__form">
+          <input type="email" class="email" id="email" placeholder="email address">
         </form>
       </div>
-      <div class="footer__blocks">
-        <h4 class="chooseBlock__head">About Us</h4>
+      <div class="footer__blocks footer__blocks--about">
+        <h4 class="footer__head">About Us</h4>
         <p class="footer__regText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div class="footer__blocks">
-        <h4 class="chooseBlock__head">Instagram</h4>
-        <div class="instaGallery">
-          <img src="assets/image-15.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-16.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-17.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-18.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-19.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-20.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-21.jpeg" alt="#" class="instaGallery__pics">
-          <img src="assets/image-22.jpeg" alt="#" class="instaGallery__pics">
-        </div>
+        <h4 class="footer__head">Instagram</h4>
+        <ul class="instaGallery">
+          <li class="instaPics">
+            <img src="assets/image-15.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-16.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+              <img src="assets/image-17.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-18.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-19.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-20.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-21.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+          <li class="instaPics">
+            <img src="assets/image-22.jpeg" alt="#" class="instaGallery__pics">
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -294,7 +318,7 @@
       </div>
     </div>
     <div class="copyright wrapper">
-      <p class="footer__regText--center">
+      <p class="footer__regText footer__regText--center">
         2018 All rights reserved ©
       </p>
     </div>
