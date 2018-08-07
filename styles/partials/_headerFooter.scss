@@ -188,3 +188,48 @@ footer {
     color: #848484;
   }
 }
+
+// ===RESPONSIVE MEDIA QUERIES===
+
+@media (max-width: 780px) {
+  .upperNav {
+    flex-direction: column;
+  }
+  .bigWelcome {
+    font-size: 7rem;
+    padding-left: 2%;
+  }
+  .smallWelcome {
+    font-size: 2rem;
+    padding-left: 2%;
+  }
+  .lowerHeader button {
+    margin-left: 2%;
+  }
+  .button {
+    width: 15%;
+    &__text {
+      font-size: 1.5rem;
+    }
+    &__small {
+      width: 25%;
+    }
+    &--long {
+      width: 25%;
+    }
+  }
+  .social {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .servicesBox {
+    &:hover {
+    background-color: #8ecceb;
+    transform: none;
+    }
+  }
+  .instaPics {
+    width: calc(33% - 2%);
+  }
+}

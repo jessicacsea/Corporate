@@ -57,6 +57,17 @@
   color: white;
 }
 
+@media (max-width: 780px) {
+  .gallery__border {
+    padding: 2%;
+    margin: 10%;
+  }
+  .gallery__head {
+    margin: 5%;
+    font-size: 1.8rem;
+  }
+}
+
 // ===SERVICES 2 SECTION===
 
 .servGrid {
