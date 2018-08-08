@@ -214,8 +214,9 @@
   <section class="question">
     <div class="wrapper quest">
       <h3 class="section__heading">Ask a Question</h3>
-        <form>
-          <input type="text" class="question__form" placeholder="Your Message">
+        <label for="question" class="visuallyHidden">Ask a Question</label>
+        <form class="qnA">
+          <input type="text" class="question__form" placeholder="Your Message" id="question">
         </form>
         <button class="button button--black button--center">
           <a href="#">
@@ -267,6 +268,7 @@
         <p class="footer__regText footer__regText--email"><a href="mailto:info@hackeryou.com">info@hackeryou.com</a></p>
         <p class="footer__regText footer__regText--phone"><a href="tel:1234567890">(123)456 - 7890</a></p>
         <p class="footer__regText footer__regText--location">Toronto, Ontario</p>
+        <label for="email" class="visuallyHidden">Enter your email to Subscribe</label>
         <form class="footer__form">
           <input type="email" class="email" id="email" placeholder="email address">
         </form>

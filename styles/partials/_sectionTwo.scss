@@ -41,6 +41,9 @@
   &:hover .gallery__pic--active {
     display: block;
   }
+  img {
+    max-height: 478px;
+  }
 }
 .gallery__pic--active {
   @include coverOverlay;
@@ -55,17 +58,6 @@
   padding: 3%;
   margin: 7%;
   color: white;
-}
-
-@media (max-width: 780px) {
-  .gallery__border {
-    padding: 2%;
-    margin: 10%;
-  }
-  .gallery__head {
-    margin: 5%;
-    font-size: 1.8rem;
-  }
 }
 
 // ===SERVICES 2 SECTION===
@@ -112,16 +104,38 @@
     padding: 0;
     margin: 5%;
   }
-
 }  /*=== END OF MAX WIDTH 960PX ===*/
 
+@media (max-width: 780px) {
+  .gallery__border {
+    padding: 2%;
+    margin: 10%;
+  }
+  .gallery__head {
+    margin: 5%;
+    font-size: 1.8rem;
+  }
+}  /*== END OF MAX WIDTH 780PX ==*/
+
+@media (max-width: 700px) {
+  .gallery {
+    flex-wrap: wrap;
+    &__pic {
+    flex-basis: 50%;
+    }
+    &:hover .gallery__pic--active {
+    display: none;
+    }
+  }
+}   /*===END OF MAX WIDTH 700PX===*/
 @media (max-width: 580px) {
   .servGrid__text {
     font-size: 1.4rem;
     padding: 0;
     margin: 14px 0;
   }
-} /* === END OF MAX WIDTH 580PX === */
+}
+ /* === END OF MAX WIDTH 580PX === */
 
 @media (max-width: 475px) {
   .gallery {
@@ -143,5 +157,5 @@
       font-size: 1.2rem;
     }
   }
-
-} /* ===END OF MAX WIDTH 475PX=== */
+}
+// ===END OF MAX WIDTH 475PX ===*/

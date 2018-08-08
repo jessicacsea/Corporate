@@ -20,7 +20,7 @@
   flex-direction: column;
 }
 
-form {
+form.qnA {
   width: 80%;
   margin: 0 auto;
   border: black 1px solid;
@@ -50,8 +50,6 @@ form {
     margin: 0;
     display: inline;
     padding-left: 15px;
-  }
-  &__pic {
   }
   &__text {
     @include coverOverlay;

@@ -132,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
@@ -719,6 +732,8 @@ footer {
   position: relative; }
   .gallery__pic:hover .gallery__pic--active {
     display: block; }
+  .gallery__pic img {
+    max-height: 478px; }
 
 .gallery__pic--active {
   position: absolute;
@@ -736,14 +751,6 @@ footer {
   padding: 3%;
   margin: 7%;
   color: white; }
-
-@media (max-width: 780px) {
-  .gallery__border {
-    padding: 2%;
-    margin: 10%; }
-  .gallery__head {
-    margin: 5%;
-    font-size: 1.8rem; } }
 
 .servGrid {
   text-align: center;
@@ -783,6 +790,26 @@ footer {
     margin: 5%; } }
 
 /*=== END OF MAX WIDTH 960PX ===*/
+@media (max-width: 780px) {
+  .gallery__border {
+    padding: 2%;
+    margin: 10%; }
+  .gallery__head {
+    margin: 5%;
+    font-size: 1.8rem; } }
+
+/*== END OF MAX WIDTH 780PX ==*/
+@media (max-width: 700px) {
+  .gallery {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .gallery__pic {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+    .gallery:hover .gallery__pic--active {
+      display: none; } }
+
+/*===END OF MAX WIDTH 700PX===*/
 @media (max-width: 580px) {
   .servGrid__text {
     font-size: 1.4rem;
@@ -809,7 +836,6 @@ footer {
   .servGrid__text {
     font-size: 1.2rem; } }
 
-/* ===END OF MAX WIDTH 475PX=== */
 .question {
   background-color: #8ecceb;
   padding: 5% 0; }
@@ -838,7 +864,7 @@ footer {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-form {
+form.qnA {
   width: 80%;
   margin: 0 auto;
   border: black 1px solid;
