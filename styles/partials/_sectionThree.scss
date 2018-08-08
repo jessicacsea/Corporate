@@ -68,3 +68,23 @@ form {
     @include coverOverlay;
   }
 }
+
+
+// ===RESPONSIVE DESIGN SECTION===
+
+@media (max-width: 475px) {
+  .headshots {
+    flex-direction: column;
+  }
+  .teamPhoto {
+    width: 200px;
+    margin: 1% auto;
+    &__head {
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+
+} /* ==END OF MAX WIDTH 475PX == */

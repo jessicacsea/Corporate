@@ -17,6 +17,10 @@
       <div class="upperNav">
         <h1 class="title__header">Corporate</h1>
         <nav>
+          <input type="checkbox" id="toggle" name="toggle">
+          <label for="toggle">
+            <i class="fa fa-bars"></i>
+          </label> 
           <ul class="nav">
             <li class="nav__item">
               <a href="#" class="nav__link">Home</a>
@@ -36,6 +40,7 @@
           </ul>
         </nav>
       </div>
+
       <div class="lowerHeader">
         <h2 class="bigWelcome">Welcome</h2>
         <h3 class="smallWelcome">to my corporate website</h3>
@@ -61,16 +66,24 @@
   <section class="chooseUs clearfix">
     <div class="chooseLeft">
       <h3 class="section__heading">Why Choose Us?</h3>
-      <div class="chooseBlock">
-        <img src="assets/image-2.jpeg" class="chooseBlock__pic">
-        <h4 class="chooseBlock chooseBlock__head">15 Years of experience</h4>
-        <p class="chooseBlock chooseBlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
-      </div>
+      <ul class="chooseBlock">
+        <li>
+          <img src="assets/image-2.jpeg" class="chooseBlock__pic">
+        </li>
+        <li class="chooseBlock__box">
+          <h4 class="chooseBlock chooseBlock__head">15 Years of experience</h4>
+          <p class="chooseBlock chooseBlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+        </li>
+      </ul>
 
-      <div class="chooseBlock">
-        <img src="assets/image-3.jpeg" class="chooseBlock__pic">
-        <h4 class="chooseBlock__head">900+ Happy clients</h4>
-        <p class="chooseBlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+      <ul class="chooseBlock">
+        <li>
+          <img src="assets/image-3.jpeg" class="chooseBlock__pic">
+        </li>
+        <li class="chooseBlock__box">
+          <h4 class="chooseBlock__head">900+ Happy clients</h4>
+          <p class="chooseBlock__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+        </li>
       </div>
     </div>
 
@@ -89,7 +102,7 @@
         <ul>
           <li class="services__text services__list"><i class="fas fa-check"></i>Lorem ipsum</li>
           <li class="services__text services__list"><i class="fas fa-check"></i>Dolor sit amet</li>
-          <li class="services__text services__list"><i class="fas fa-check"></i>amet consectetur</li>
+          <li class="services__text services__list"><i class="fas fa-check"></i>Amet consectetur</li>
         </ul>
       </div>
   
@@ -100,7 +113,7 @@
         <ul>
           <li class="services__text services__list"><i class="fas fa-check"></i>Lorem ipsum</li>
           <li class="services__text services__list"><i class="fas fa-check"></i>Dolor sit amet</li>
-          <li class="services__text services__list"><i class="fas fa-check"></i>amet consectetur</li>
+          <li class="services__text services__list"><i class="fas fa-check"></i>Amet consectetur</li>
         </ul>
       </div>
   
@@ -111,7 +124,7 @@
         <ul>
           <li class="services__text services__list"><i class="fas fa-check"></i>Lorem ipsum</li>
           <li class="services__text services__list"><i class="fas fa-check"></i>Dolor sit amet</li>
-          <li class="services__text services__list"><i class="fas fa-check"></i>amet consectetur</li>
+          <li class="services__text services__list"><i class="fas fa-check"></i>Amet consectetur</li>
         </ul>
       </div>
     </div>
@@ -297,7 +310,7 @@
       <div class="upperNav upperNav--center">
         <h1 class="title__header title__header--small title__header--white title__header--center">Corporate</h1>
         <nav>
-          <ul class="nav">
+          <ul class="nav__footer">
             <li class="nav__item nav__item--small nav__item--center">
               <a href="#" class="nav__link nav__link--white nav__link--small">Home</a>
             </li>
